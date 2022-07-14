@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
- * _printf - prints a string in a formatted way
- * @format: string to print (char *)
- * @...: variadic parameters (unknown)
+ * _printf - prints anything
+ * @format: the format string
  *
- * Return: number of characters printed
+ * Return: number of bytes printed
  */
-
-	int _printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	int sum = 0;
 	va_list ap;
