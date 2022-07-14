@@ -7,22 +7,24 @@
  * Return: number of characters printed on Success
  * upon failure -1
  */
-
-int print_str(va_list args)
+char *get_precision(char *p, params_t *params, va_list ap)
 {
-	int i;
-	int count = 0;
-	char *str;
+	int d = 0;
 
-	str = va_arg(args, char *);
-	if (str == NULL)
-		return (-1);
-
-	while (str[i])
+	if (*p != '.')
+		return (p);
+	p++;
+	if (*p == '*')
 	{
-		count = write(1, &str[i], 1);
-		i = i + 1;
+		d = va_arg(ap, int);
+		p++;
+	}
+	else
+	{
+		while (_isdigit(*p))
+			d = d * 10 + (*p++ - '0');
 	}
 
-	return (count);
-}	
+	params->precision = d;
+	return (p);
+}
