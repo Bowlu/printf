@@ -6,7 +6,7 @@
 .nf
 .BI printf (FORMAT, ARGUMENT)...
 .PP
-.BI "#include 'main.h'
+.BI "#include "main.h"
 .BI "#include <stdarg.h>"
 .BI "#include <unistd.h>"
 .PP
@@ -98,13 +98,13 @@ The character \fI%\fR is followed by zero the following flags:
 .R A space in blank should be left before a positive number followed by a signed conversion.
 .SH NOTES.R A space in blank should be left before a positive number followed by a signed conversion.
 .SH NOTES
-.R The \fB_printf()\fR is a project collaboration between \fBSuara Ayomide\fR and \fBOni Remi\fR, students of the ALX Software Engineering Programme at \fBHolberton School\fR.
+.R The \fB_printf()\fR is a project collaboration between \fBEbenezer Aibor\fR and \fBAwoyemi Boluwatife\fR, students of the ALX Software Engineering Programme at \fBHolberton School\fR.
 .SH BUGS
 .R In process
 .SH EXAMPLE
 .R To print the the string \fBHello Holberton!\fR and its length in decimal.
 
-#include ''holberton.h''
+#include "holberton.h"
 
 int main(void)
 
@@ -112,11 +112,11 @@ int main(void)
 
 	int length;
 
-	_printf(''%s'', ''Hello, Holberton!'')
+	_printf("%s", "Hello, Holberton!")
 
-	_printf(''Hello Holberton! contains %d characters'', length);
+	_printf("Hello Holberton! contains %d characters", length);
 
-	length = _printf(''Hello Holberton!'');
+	length = _printf("Hello Holberton!");
 
 	return (0);
 
@@ -124,4 +124,4 @@ int main(void)
 .SH SEE ALSO
 .R printf(3)
 .SH AUTHORS
-Written by \fBSuara Ayomide\fR and \fBOni Remi\fR.
+AWOYEMI BOLUWATIFE AND EBENEZER AIBOR
