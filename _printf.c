@@ -6,13 +6,8 @@
  * @format: input string.
  *
  * Return: number of chars printed.
-=======
- * _printf - prints anything
- * @format: the format string
- *
- * Return: number of bytes printed
->>>>>>> ca9e05345306f3cbbdca6d02d042f7178f1dc782
  */
+
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0, len = 0, ibuf = 0;
