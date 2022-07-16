@@ -8,18 +8,6 @@
  * Return: On success 1.
  */
 
-unsigned int handl_buf(char *buf, char c, unsigned int ibuf)
-{
-	if (ibuf == 1024)
-	{
-		print_buf(buf, ibuf);
-		ibuf = 0;
-	}
-	buf[ibuf] = c;
-	ibuf++;
-	return (ibuf);
-}
-
 int print_str(va_list arguments, char *buf, unsigned int ibuf)
 {
 	char *str;
