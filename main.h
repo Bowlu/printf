@@ -54,6 +54,7 @@ char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
  * Description: struct that stores pointers to a
  * printer functions.
  */
+
 typedef struct print
 {
 	char *type_arg;
